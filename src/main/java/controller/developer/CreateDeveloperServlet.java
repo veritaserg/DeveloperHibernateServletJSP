@@ -1,13 +1,20 @@
 package controller.developer;
 
+import model.Developer;
+import org.springframework.stereotype.Controller;
+import service.DeveloperService;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 
-@WebServlet("/")
+
+
 public class CreateDeveloperServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -16,6 +23,13 @@ public class CreateDeveloperServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+        DeveloperService developerService = new DeveloperService();
+        Developer developer = new Developer();
+        developer.setFirstName(req.getParameter("developerFirstName"));
+        developer.setLastName(req.getParameter("developerLastName"));
+        developer.setSpecialty(req.getParameter("developerSpecialty"));
+
+        developerService.create(developer);
+        resp.sendRedirect("/WEB-INF/pages/list-developers");
     }
 }
