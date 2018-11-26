@@ -26,37 +26,37 @@
     <div class="row">
 
         <div class="col-sm">
-            <a href="/WEB-INF/pages/add-developer.jsp">Add developer</a>
+            <a href="/add-developer">Add developer</a>
         </div>
         <div class="col-sm">
-            <a href="/MyWebApp/add-project">Add account</a>
+            <a href="/add-project">Add account</a>
         </div>
         <div class="col-sm">
-            <a href="/MyWebApp/add-skill">Add skill</a>
-        </div>
-    </div>
-    <div class="row">
-
-        <div class="col-sm">
-            <a href="/MyWebApp/edit-developer">Edit developer</a>
-        </div>
-        <div class="col-sm">
-            <a href="/MyWebApp/edit-project">Edit account</a>
-        </div>
-        <div class="col-sm">
-            <a href="/MyWebApp/edit-skill">Edit skill</a>
+            <a href="/add-skill">Add skill</a>
         </div>
     </div>
     <div class="row">
 
         <div class="col-sm">
-            <a href="/MyWebApp/delete-developer">Delete developer</a>
+            <a href="/edit-developer">Edit developer</a>
         </div>
         <div class="col-sm">
-            <a href="/MyWebApp/delete-project">Delete account</a>
+            <a href="/edit-project">Edit account</a>
         </div>
         <div class="col-sm">
-            <a href="/MyWebApp/delete-skill">Delete skill</a>
+            <a href="/edit-skill">Edit skill</a>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-sm">
+            <a href="/delete-developer">Delete developer</a>
+        </div>
+        <div class="col-sm">
+            <a href="/delete-project">Delete account</a>
+        </div>
+        <div class="col-sm">
+            <a href="/delete-skill">Delete skill</a>
         </div>
     </div>
     <div class="row">
@@ -65,10 +65,10 @@
             <a href="/MyWebApp/list-developers">List developers</a>
         </div>
         <div class="col-sm">
-            <a href="/MyWebApp/list-projects">List account</a>
+            <a href="/list-projects">List account</a>
         </div>
         <div class="col-sm">
-            <a href="/MyWebApp/list-skills">List skills</a>
+            <a href="/list-skills">List skills</a>
         </div>
     </div>
 </div>

@@ -25,7 +25,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="developerSpecialty">Specialty"</label>
+                            <label for="developerSpecialty">Specialty</label>
                             <input type="text" class="form-control" name="developerSpecialty" placeholder="Developer specialty">
                         </div>
                         <button type="submit" class="btn btn-primary">Execute</button>
