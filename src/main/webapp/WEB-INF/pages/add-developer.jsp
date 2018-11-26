@@ -24,16 +24,6 @@
                             <input type="text" class="form-control" name="developerLastName" placeholder="Developer last name">
                         </div>
 
-                        <fieldset class="form-group">
-                            <legend>Gender</legend>
-                            <div class="form-check">
-                                <label class="form-check-label">
-                                    <input type="radio" class="form-check-input" name="developerGender" value="MALE" checked>
-                                    Male
-                                </label>
-                            </div>
-
-                        </fieldset>
                         <div class="form-group">
                             <label for="developerSpecialty">Specialty"</label>
                             <input type="text" class="form-control" name="developerSpecialty" placeholder="Developer specialty">
