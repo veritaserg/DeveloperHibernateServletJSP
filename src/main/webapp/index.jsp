@@ -62,7 +62,7 @@
     <div class="row">
 
         <div class="col-sm">
-            <a href="/MyWebApp/list-developers">List developers</a>
+            <a href="/list-developers">List developers</a>
         </div>
         <div class="col-sm">
             <a href="/list-projects">List account</a>

@@ -2,9 +2,13 @@ package dao.hibernate;
 
 import dao.AbstractDao;
 import dao.DeveloperDAO;
+import model.Account;
 import model.Developer;
+import model.Skill;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 
 public class HibernateDeveloperDAOImpl extends AbstractDao<Developer> implements DeveloperDAO {

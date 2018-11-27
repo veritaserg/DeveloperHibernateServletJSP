@@ -9,9 +9,22 @@
     <servlet-name>CreateDeveloperServlet</servlet-name>
     <servlet-class>controller.developer.CreateDeveloperServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>ListDeveloperServlet</servlet-name>
+    <servlet-class>controller.developer.ListDevelopersServlet</servlet-class>
+  </servlet>
+
+
+
   <servlet-mapping>
     <servlet-name>CreateDeveloperServlet</servlet-name>
     <url-pattern>/add-developer</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>ListDeveloperServlet</servlet-name>
+    <url-pattern>/list-developers</url-pattern>
   </servlet-mapping>
 
 

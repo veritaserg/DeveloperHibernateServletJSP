@@ -28,6 +28,17 @@
                             <label for="developerSpecialty">Specialty</label>
                             <input type="text" class="form-control" name="developerSpecialty" placeholder="Developer specialty">
                         </div>
+                        <div class="form-group">
+                            <label for="developerAccount">Account</label>
+                            <input type="text" class="form-control" name="developerAccount" placeholder="Developer account">
+                        </div>
+                        <div class="form-group">
+                            <label for="developerSkill">Skill</label>
+                            <input type="text" class="form-control" name="developerSkill" placeholder="Developer skill">
+                        </div>
+
+
+
                         <button type="submit" class="btn btn-primary">Execute</button>
                     </form>
                 </div>

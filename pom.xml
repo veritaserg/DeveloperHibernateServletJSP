@@ -8,6 +8,45 @@
   <name>Developer</name>
   <url>http://maven.apache.org</url>
 
+    <build>
+        <finalName>ServletsTutorial</finalName>
+
+        <plugins>
+            <!-- Tomcat plugin -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <path>/</path>
+                    <port>8088</port>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <propertyFile>liquibase/liquibase.properties</propertyFile>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>update</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
   <properties>
     <javax.servlet.api.version>2.5</javax.servlet.api.version>
     <tomcat.plugin.version>2.2</tomcat.plugin.version>
@@ -24,6 +63,25 @@
       <version>2.5</version>
       <scope>provided</scope>
     </dependency>
+      <dependency>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+          <version>1.7.25</version>
+      </dependency>
+      <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+      <dependency>
+          <groupId>org.yaml</groupId>
+          <artifactId>snakeyaml</artifactId>
+          <version>1.18</version>
+      </dependency>
+
+      <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+      <dependency>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-classic</artifactId>
+          <version>1.2.3</version>
+          <scope>test</scope>
+      </dependency>
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
@@ -34,7 +92,11 @@
       <artifactId>hibernate-tools</artifactId>
       <version>3.2.0.ga</version>
     </dependency>
-
+      <dependency>
+          <groupId>ch.qos.logback</groupId>
+          <artifactId>logback-core</artifactId>
+          <version>1.2.3</version>
+      </dependency>
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-webmvc</artifactId>
@@ -43,45 +105,4 @@
 
   </dependencies>
 
-  <build>
-    <finalName>ServletsTutorial</finalName>
-
-    <plugins>
-      <!-- Tomcat plugin -->
-      <plugin>
-        <groupId>org.apache.tomcat.maven</groupId>
-        <artifactId>tomcat7-maven-plugin</artifactId>
-        <version>2.2</version>
-        <configuration>
-          <path>/</path>
-          <port>8088</port>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>6</source>
-          <target>6</target>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>org.liquibase</groupId>
-        <artifactId>liquibase-maven-plugin</artifactId>
-        <version>3.5.1</version>
-        <configuration>
-          <propertyFile>liquibase/liquibase.properties</propertyFile>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>update</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
-
-
-    </plugins>
-  </build>
 </project>
