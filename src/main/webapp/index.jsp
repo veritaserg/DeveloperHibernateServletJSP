@@ -29,7 +29,7 @@
             <a href="/add-developer">Add developer</a>
         </div>
         <div class="col-sm">
-            <a href="/add-project">Add account</a>
+            <a href="/add-account">Add account</a>
         </div>
         <div class="col-sm">
             <a href="/add-skill">Add skill</a>
@@ -41,7 +41,7 @@
             <a href="/edit-developer">Edit developer</a>
         </div>
         <div class="col-sm">
-            <a href="/edit-project">Edit account</a>
+            <a href="/edit-account">Edit account</a>
         </div>
         <div class="col-sm">
             <a href="/edit-skill">Edit skill</a>
@@ -53,7 +53,7 @@
             <a href="/delete-developer">Delete developer</a>
         </div>
         <div class="col-sm">
-            <a href="/delete-project">Delete account</a>
+            <a href="/delete-account">Delete account</a>
         </div>
         <div class="col-sm">
             <a href="/delete-skill">Delete skill</a>
@@ -65,7 +65,7 @@
             <a href="/list-developers">List developers</a>
         </div>
         <div class="col-sm">
-            <a href="/list-projects">List account</a>
+            <a href="/list-account">List account</a>
         </div>
         <div class="col-sm">
             <a href="/list-skills">List skills</a>
