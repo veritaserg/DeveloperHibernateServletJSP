@@ -4,6 +4,8 @@ import model.Account;
 import model.Developer;
 import model.Skill;
 import service.DeveloperService;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +18,7 @@ import java.util.Set;
 public class CreateDeveloperServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/WEB-INF/pages/add-developer.jsp").forward(req, resp);
+        req.getRequestDispatcher("WEB-INF/pages/add-developer.jsp").forward(req, resp);
     }
 
     @Override
@@ -33,6 +35,7 @@ skills.add(skill);
 developer.setSkills(skills);
 developer.setAccount(new Account(req.getParameter("developerAccount")));
         developerService.create(developer);
-        resp.sendRedirect("/WEB-INF/pages/list-developers");
+        resp.sendRedirect("index.jsp");
+
     }
 }

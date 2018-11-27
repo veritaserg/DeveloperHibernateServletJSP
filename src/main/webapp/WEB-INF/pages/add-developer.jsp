@@ -14,26 +14,26 @@
             <h4>Add developer</h4>
             <div class="form-container">
                 <div class="form">
-                    <form action="${pageContext.request.contextPath}/add-developer" method="POST">
+                    <form action="add-developer" method="POST">
                         <div class="form-group">
                             <label for="developerFirstName">First name</label>
                             <input type="text" class="form-control" name="developerFirstName" placeholder="Developer first name">
                         </div>
                         <div class="form-group">
-                            <label for="developerLastName">Last name</label>
+                            <%--@declare id="developerlastname"--%><label for="developerLastName">Last name</label>
                             <input type="text" class="form-control" name="developerLastName" placeholder="Developer last name">
                         </div>
 
                         <div class="form-group">
-                            <label for="developerSpecialty">Specialty</label>
+                            <%--@declare id="developerspecialty"--%><label for="developerSpecialty">Specialty</label>
                             <input type="text" class="form-control" name="developerSpecialty" placeholder="Developer specialty">
                         </div>
                         <div class="form-group">
-                            <label for="developerAccount">Account</label>
+                            <%--@declare id="developeraccount"--%><label for="developerAccount">Account</label>
                             <input type="text" class="form-control" name="developerAccount" placeholder="Developer account">
                         </div>
                         <div class="form-group">
-                            <label for="developerSkill">Skill</label>
+                            <%--@declare id="developerskill"--%><label for="developerSkill">Skill</label>
                             <input type="text" class="form-control" name="developerSkill" placeholder="Developer skill">
                         </div>
 
