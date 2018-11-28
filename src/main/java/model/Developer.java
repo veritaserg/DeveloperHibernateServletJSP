@@ -31,12 +31,6 @@ public class Developer {
         this.skills = skills;
     }
 
-    public Developer(String firstName, String lastName, String specialty) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.specialty = specialty;
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
