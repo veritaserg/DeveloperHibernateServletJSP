@@ -11,13 +11,14 @@
         </property>
 
         <property name="hibernate.connection.url">
-            jdbc:mysql://127.0.0.1:3306/dev
+            mysql://b7113ef0a42fc1:bad8e439@us-cdbr-iron-east-01.cleardb.net/heroku_0ad5cca1147de48?reconnect=true
         </property>
         <property name="hibernate.connection.username">
-           root
+            infophotomasterscomua@gmail.com
+
         </property>
         <property name="hibernate.connection.password">
-           1234
+
         </property>
 
         <property name="hibernate.id.new_generator_mappings">false</property>
@@ -26,3 +27,5 @@
         <mapping class="model.Account"/>
     </session-factory>
 </hibernate-configuration>
+
+
