@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -17,7 +18,9 @@ public class ListDevelopersServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         DeveloperService developerService = new DeveloperService();
         List<Developer> developers = developerService.getAll();
-        req.setAttribute("developers", developers);
-        req.getRequestDispatcher("/view/developer/list-developers.jsp").forward(req, resp);
+
+          req.setAttribute("developers", developers);
+
+        req.getRequestDispatcher("WEB-INF/pages/list-developers.jsp").forward(req, resp);
     }
 }

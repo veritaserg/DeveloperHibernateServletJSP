@@ -1,5 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="model.Developer" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
 
 <html>
 <head>
@@ -15,32 +17,24 @@
     <div class="container">
         <div class="block block-table">
             <h4>List of all developers</h4>
-            <div class="table-container">
-                <table class="table">
-                    <thead class="thead-dark">
-                    <tr>
-                        <th scope="col">Id</th>
-                        <th scope="col">First name</th>
-                        <th scope="col">Last name</th>
-                        <th scope="col">Specialty</th>
 
+            <tbody>
+            <% List<Developer> developers = (ArrayList<Developer>) request.getAttribute("developers");
+                for (Developer developer : developers) {
+                    out.print("ID: " + developer.getId());
+                    out.print("<br/>");
+                    out.print("FirstName: " + developer.getFirstName());
+                    out.print("<br/>");
+                    out.print("LastName: " + developer.getLastName());
+                    out.print("<br/>");
+                    out.print("Account: " + developer.getAccount());
+                    out.print("<br/>");
+                    out.print("Skill: " + developer.getSkills());
 
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <c:forEach var="developer" items="${developers}">
-                        <tr>
-                            <td><c:out value="${developer.id}"/></td>
-                            <td><c:out value="${developer.firstName}"/></td>
-                            <td><c:out value="${developer.lastName}"/></td>
-                            <td><c:out value="${developer.specialty}"/></td>
-
-
-                        </tr>
-                    </c:forEach>
-                    </tbody>
-                </table>
-            </div>
+                    out.print("<br/>");
+                    out.print("<br/>");
+                }%>
+            </tbody>
         </div>
     </div>
 </div>
