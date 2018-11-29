@@ -11,19 +11,19 @@
         </property>
 
         <property name="hibernate.connection.url">
-            mysql://b7113ef0a42fc1:bad8e439@us-cdbr-iron-east-01.cleardb.net/heroku_0ad5cca1147de48?reconnect=true
+            jdbc:mysql://mysqlaws.c05bmdvhonqe.ap-northeast-1.rds.amazonaws.com:3306/developer
         </property>
         <property name="hibernate.connection.username">
-            infophotomasterscomua@gmail.com
+            admin
 
         </property>
         <property name="hibernate.connection.password">
-
+            qwerty123
         </property>
 
         <property name="hibernate.id.new_generator_mappings">false</property>
         <mapping class="model.Skill"/>
-         <mapping class="model.Developer"/>
+        <mapping class="model.Developer"/>
         <mapping class="model.Account"/>
     </session-factory>
 </hibernate-configuration>
