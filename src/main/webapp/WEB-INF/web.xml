@@ -1,8 +1,9 @@
-<!DOCTYPE web-app PUBLIC
-        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
-        "http://java.sun.com/dtd/web-app_2_3.dtd" >
-<web-app>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+        id="Jersey-IMS-Task-ID" version="3.0">
   <display-name>MyWebApp</display-name>
 
   <servlet>
@@ -12,6 +13,10 @@
   <servlet>
     <servlet-name>ListDeveloperServlet</servlet-name>
     <servlet-class>controller.developer.ListDevelopersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteDeveloperServlet</servlet-name>
+    <servlet-class>controller.developer.DeleteDeveloperServlet</servlet-class>
   </servlet>
 
 
@@ -27,5 +32,9 @@
     <url-pattern>/list-developers</url-pattern>
   </servlet-mapping>
 
+  <servlet-mapping>
+    <servlet-name>DeleteDeveloperServlet</servlet-name>
+    <url-pattern>/delete-developer</url-pattern>
+  </servlet-mapping>
 
 </web-app>

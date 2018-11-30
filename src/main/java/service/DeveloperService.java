@@ -13,8 +13,11 @@ public class DeveloperService {
     public void create(Developer developer){
         hibernateDeveloperDAO.create(developer);
     }
-
     public List<Developer> getAll(){
        return hibernateDeveloperDAO.getAll();
     }
+
+public void delete(Long id){
+    hibernateDeveloperDAO.delete(id);
+}
 }

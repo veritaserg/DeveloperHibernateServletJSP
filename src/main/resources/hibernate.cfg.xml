@@ -4,21 +4,21 @@
 
 <hibernate-configuration>
     <session-factory>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
 
         <property name="hibernate.connection.driver_class">
             com.mysql.jdbc.Driver
         </property>
 
         <property name="hibernate.connection.url">
-            jdbc:mysql://mysqlaws.c05bmdvhonqe.ap-northeast-1.rds.amazonaws.com:3306/developer
+            jdbc:mysql://127.0.0.1/dev
         </property>
         <property name="hibernate.connection.username">
-            admin
+            root
 
         </property>
         <property name="hibernate.connection.password">
-            qwerty123
+            1234
         </property>
 
         <property name="hibernate.id.new_generator_mappings">false</property>

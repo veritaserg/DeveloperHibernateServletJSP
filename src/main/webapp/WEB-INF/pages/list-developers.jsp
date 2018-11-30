@@ -36,6 +36,10 @@
 
                 }%>
             </tbody>
+            <a href="/index.jsp">Main menu</a>
+            <br/>
+            <br/>
+
         </div>
     </div>
 </div>
