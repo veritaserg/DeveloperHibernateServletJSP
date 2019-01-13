@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/veritaserg/DeveloperHibernateServletJSP.svg?branch=master)](https://travis-ci.org/veritaserg/DeveloperHibernateServletJSP)
+[![Build Status](https://travis-ci.org/veritaserg/DeveloperHibernetServletJSP.svg?branch=master)](https://travis-ci.org/veritaserg/DeveloperHibernetServletJSP)
 
 
 Необходимо реализовать веб приложение, которое взаимодействует с БД.
